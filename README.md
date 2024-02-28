@@ -2,9 +2,10 @@
 EModelX is a method for automatic cryo-EM protein complex structure modeling.
 
 ## Environment
-`conda env create -f EModelX.yaml`  
+`conda env create -f EModelX.yml`  
 install requirement for AlphaFold:  
-For AlphaFold: https://github.com/deepmind/alphafold     
+For AlphaFold: https://github.com/deepmind/alphafold    
+If models/* in git lfs failed to be downloaded when cloning, you can download them by cloning https://github.com/ChenShengsGitHub/EModelX  
 
 ## Minimal Example: Modeling for new EM maps
 `python run_com_modeling.py --protocol=temp_flex --EM_map=./inputs/emd_32336.map.gz --fasta=./inputs/7w72.fasta --template_dir=./inputs/templates --output_dir=./outputs`  
@@ -16,3 +17,4 @@ For AlphaFold: https://github.com/deepmind/alphafold
 
 ## Web Server
 https://bio-web1.nscc-gz.cn/app/EModelX
+![EModelX](outputs/figure1.png)
