@@ -1,4 +1,4 @@
-name: EMulFold
+name: EModelX
 channels:
   - pytorch
   - anaconda

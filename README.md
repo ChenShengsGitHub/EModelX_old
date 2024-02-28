@@ -1,8 +1,8 @@
-# EMulFold
-EMulFold is a method for automatic cryo-EM protein complex structure modeling.
+# EModelX
+EModelX is a method for automatic cryo-EM protein complex structure modeling.
 
 ## Environment
-`conda env create -f EMulFold.yaml`  
+`conda env create -f EModelX.yaml`  
 install requirement for AlphaFold:  
 For AlphaFold: https://github.com/deepmind/alphafold     
 
@@ -13,3 +13,6 @@ For AlphaFold: https://github.com/deepmind/alphafold
 , and `--fasta` with your target fasta
 , and `--template_dir`: the dir of template folder, needed when --protocol in [temp_flex,temp_rigid], path format for different chain please reference to ./inputs/templates  
 , and `--output_dir`: the pdb output dir
+
+## Web Server
+https://bio-web1.nscc-gz.cn/app/EModelX
