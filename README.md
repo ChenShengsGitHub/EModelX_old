@@ -1,5 +1,6 @@
 # EModelX
 EModelX is a method for automatic cryo-EM protein complex structure modeling.
+![EModelX](outputs/figure1.png)
 
 ## Environment
 `conda env create -f EModelX.yml`  
@@ -21,4 +22,4 @@ Notice: If you want to run EModelX(+AF), please place your AlphaFold-predicted s
 ## Web Server
 EModelX's web server is accessible at
 https://bio-web1.nscc-gz.cn/app/EModelX
-![EModelX](outputs/figure1.png)
+
