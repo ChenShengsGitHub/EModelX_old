@@ -3,17 +3,20 @@ EModelX is a method for automatic cryo-EM protein complex structure modeling.
 
 ## Environment
 `conda env create -f EModelX.yml`  
-install requirement for AlphaFold:  
-For AlphaFold: https://github.com/deepmind/alphafold    
+For EModelX(+AF), you may need to run AlphaFold following https://github.com/deepmind/alphafold or get AlphaFold-predicted single-chain structures from AlphaFoldDB (https://alphafold.ebi.ac.uk/).  
 
 ## Minimal Example: Modeling for new EM maps
+
 `python run_com_modeling.py --protocol=temp_flex --EM_map=./inputs/emd_32336.map.gz --fasta=./inputs/7w72.fasta --template_dir=./inputs/templates --output_dir=./outputs`  
-, where you can replace `--protocol` within [seq_free,temp_free,temp_flex,temp_rigid]
-, and `--EM_map` with your target EM map  
-, and `--fasta` with your target fasta
-, and `--template_dir`: the dir of template folder, needed when --protocol in [temp_flex,temp_rigid], path format for different chain please reference to ./inputs/templates  
-, and `--output_dir`: the pdb output dir
+, where you can replace `--protocol` with temp_free for EModelX and temp_flex for EModelX(+AF)
+, and `--EM_map` with your target EM map   
+, and `--fasta` with your target fasta   
+, and `--template_dir`: the directory of template folder, needed when --protocol == temp_flex   
+, and `--output_dir`: the output directory for modeling results  
+
+Notice: If you want to run EModelX(+AF), please place your AlphaFold-predicted single-chain structures in your `--template_dir`， the format should follow our example in ./inputs/templates.  
 
 ## Web Server
+EModelX's web server is accessible at
 https://bio-web1.nscc-gz.cn/app/EModelX
 ![EModelX](outputs/figure1.png)
